@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="appoitment.htmlS">
+</head>
+<body>
+    <h1>       PATIENT DETAILS:</h1>
+    
+<div>
+   
+   <div class="v">
+    <table border = "1">
+        
+        <tr>
+           <td style="font-size: 30px;">Patient Name:</td>
+           <!-- <td>    <span id="data">  </span>    </td> -->
+           <td style="font-size: 30px;">Shreya chennam</td>
+           <!-- <td>    <span id="data 1">  </span>    </td> -->
+        </tr>
+        
+        <tr>
+           <td style="font-size: 30px;">Gender:</td>
+           <!-- <td> <span id="data1">  </span></td> -->
+           <td style="font-size: 30px;">F</td>
+           <!-- <td>    <span id="data 1">  </span>    </td> -->
+        </tr>
+        <tr>
+            <td style="font-size: 30px;">Age:</td>
+            <!-- <td> <span id="Age">  </span></td> -->
+            <td style="font-size: 30px;">19</td>
+
+            
+         </tr>
+         <tr>
+            <td style="font-size: 30px;">Email-ID:</td>
+            <!-- <td style="font-size: 30px;">Age:</td> -->
+            <td style="font-size: 30px;">shriya123@gmail.com</td>
+         </tr>
+         <tr>
+            <td style="font-size: 30px;">Contact :</td>
+            <!-- <td> <span id="contac">  </span></td> -->
+            <td style="font-size: 30px;">8688526565</td>
+         </tr>
+        
+         <tr>
+            <td style="font-size: 30px;">Specialist:</td>
+            <!-- <td> <span id="data6">  </span></td> -->
+            <td style="font-size: 30px;">Dermatologist</td>
+         </tr>
+         <tr>
+            <td style="font-size: 30px;">Date :</td>
+            <!-- <td> <span id="data7">  </span></td> -->
+            <td style="font-size: 30px;">09-02-2023</td>
+         </tr>
+         <tr>
+            <td style="font-size: 30px;">Time :</td>
+            <!-- <td> <span id="data8">  </span></td> -->
+            <td style="font-size: 30px;">19:00</td>
+         </tr>
+         <tr>
+            <td style="font-size: 30px;">Symptoms :</td>
+            <!-- <td> <span id="data9">  </span></td> -->
+            <td style="font-size: 30px;">Acne,oilyskin</td>
+         </tr>
+
+
+
+     </table>
+     <h1><em>YOUR APPOINTMENT BOOKED SUCCESFULLY....!!</em></h1>
+     <h3>Details will be sent to your mail</h3>
+     <h1>THANKS FOR CHOOSING US!</h1>
+     <h2>We Take Care Of U!</h2>
+    </div> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFsfk9T2cOMXb76jiVPjQGaV063tTKmBNBEw&usqp=CAU" class="imagee">
+</div>
+<script>
+    document.getElementById("data").innerHTML=localStorage.getItem("patient-name");
+    document.getElementById("data1").innerHTML=localStorage.getItem("txtValue1");
+    document.getElementById("data2").innerHTML=localStorage.getItem("age");
+    document.getElementById("data3").innerHTML=localStorage.getItem("txtValue3");
+    document.getElementById("data4").innerHTML=localStorage.getItem("txtValue4");
+</script>
+</div>
+<input type="confirm" value="confirm" onclick="getData()">
+</body>
+</html>

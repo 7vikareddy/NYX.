@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+                    <!--CSS-->
+
+                    <style type="text/css">
+
+                        th{
+
+                             background-color: rgb(65, 49, 118);
+
+                        }
+
+
+
+                        td{ border: none;
+                             text-align: center;
+                        }
+                    </style>
+
+        <script type="text/javascript">
+
+                        var total=0;
+                        var tax=0;
+                        var GrandTotal=0;
+                        function Function(choice) {
+                        var c,d,e;
+                            if (choice == 1)
+                            {
+                                var x = document.getElementById("quantity_0").value;
+                                var b = parseInt(x);
+                                c= ( b * 58 );      
+                                document.getElementById('rate_1').value=c;
+                                total=total+c;
+                            }
+
+                            else if(choice == 2)
+                            {
+                                var x = document.getElementById("quantity_1").value;
+                                var b = parseInt(x);
+                                d= ( b * 46 );
+                                document.getElementById('rate_2').value=d;
+                                total=total+d;
+                            }
+                            else if (choice == 3)
+                            {
+                                var x = document.getElementById("quantity_2").value;
+                                var b = parseInt(x);
+                                e=( b * 1090 );
+                                document.getElementById('rate_3').value=e;
+                                total=total+e;
+                            }
+              else
+              {
+                 window.alert("Wrrong Choice");
+                }
+                                         tax=(total*15)/100;
+                                        document.getElementById('Total').value=total;
+                                        document.getElementById('tax').value=tax;
+                                        GrandTotal=(tax+total);
+
+        }
+function update() {
+     document.getElementById('GTotal').value = GrandTotal;
+}
+
+</script>
+<link rel="stylesheet" href="index.html">
+
+</head>
+<body>
+    <div style="border: 2px solid; width: 50%;padding: 2% ;margin-left: 25%" align="center">
+        <h1 style="text-align: center; color: rgb(28, 32, 28)">Medical Billing System</h1>
+        <table id="table_0" frame="box" border="NO" rules="rows"style="width : auto; " cellspacing="20" align="center" cellpadding="7" cellspacing="5" bgcolor="white">
+        <tr style="border: 2px solid">
+            <th><em>S. NO</em></th>
+            <th><em>Item</em></th>
+            <th><em>Unit Cost <br>(Rs.)</em></th>
+            <th><em>Quantity</em></th>
+            <th><em>Cost <br> (Rs.)</em></th>
+        </tr>
+        <tr>
+         <td>1</td>
+        <td>Erithramycin 100 mg</td>
+        <td>58</td>
+        <td><input type="text"  id="quantity_0" size="3" onchange="Function(1)" value="" maxlength="3"></td>
+        <td><input type="text"  id="rate_1" size="3" value="" maxlength="3"></td>
+        </tr>
+        
+        <tr>
+        <td>2</td>
+        <td>Femramycin 500 mg</td>
+        <td>46</td>
+        <td><input type="text" id="quantity_1" size="3" onchange="Function(2)" value="" maxlength="3"></td>
+        <td><input type="text" id="rate_2" size="3" value="" maxlength="3"></td></tr>
+        </tr>
+        
+        <tr>
+        <td>3</td>
+        <td>Oximycin 2 mg</td>
+        <td>1090</td>
+        <td><input type="text" id="quantity_2" size="3" onchange="Function(3)" value="" maxlength="3"></td>
+        <td><input type="text" id="rate_3" size="3" value="" maxlength="3"></td></tr>
+        <tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><b>Total</b></td>
+        <td><input type="text" name="quantity_0" id="Total" size="3" value="" maxlength="3"></td></tr>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><b>GST At 15%</b></td>
+        <td><input type="text"  id="tax" size="3" value="" maxlength="3"></td></tr>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+         <td><b>Grand Total Rs.</b></td>
+         <td><input type="text"  id="GTotal" size="3" value="" maxlength="3"></td></tr>
+        
+        </tr>
+        
+        </table>
+        
+        <br>
+        <button onclick="update()" style="color: red; "><b>Update Grand Total</b></button>  
+        </div>
+        </body>
+        </html>
+        
+
+ 
+

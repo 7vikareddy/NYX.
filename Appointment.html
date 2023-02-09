@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.html">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg nav-back fixed-top" 
+    id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="#">Medical</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button"
+           data-toggle="collapse" data-target="#navbarResponsive" 
+           aria-controls="navbarResponsive" aria-expanded="false" 
+           aria-label="Toggle navigation"><i class="fas fa-syringe fa-2x"></i>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" 
+                  href="#about">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#about">Medical Camps</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                     href="#projects">Team</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#signup">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+   
+<!-- End Header -->    
+   <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative">
+      <h1>24/7 Care is available</h1>
+      <h2>NYX at your service</h2>
+      <a href="#about" class="main-btn">Get Started</a>
+    </div>
+  </section>
+  <!-- End Hero -->
+  <div class="container mt-4 p-4">
+      <div class="row">
+          <div class="col-md-6">
+              <h2 class="text-center my-4">
+                  Find Consultations
+              </h2>
+              <form>
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-lg-4">
+                          Patient Name
+                      </label>
+                      <div class="col-sm-8 col-lg-8">
+                          <input type="text"id="patient-name"class="form-control"
+                          placeholder="Name"required>
+                      </div>
+                  </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Gender
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="gender" id="Gender"class="form-control"
+                        placeholder="M/F"required>
+                    </div>
+                </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Age
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="age" id="Age"class="form-control"
+                        placeholder=" "required>
+                    </div>
+                </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Email-Id
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="email" name="" id="Email-Id"class="form-control"
+                        placeholder="mail"required>
+                    </div>
+                </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Contact
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="tel"id="contact"class="form-control"
+                        placeholder="123"required>
+                    </div>
+                </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Specialist
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="text" id="Specialist"class="form-control"
+                        placeholder=""required>
+                    </div>
+                </div>
+                  <!---->
+                  
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                      Appointment Date
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="date"id="date"class="form-control">
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Appointment Time
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="time"id="time"class="form-control">
+                       </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Symptoms
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <textarea id="symptoms" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row justify-content-end">
+                    <div class="col-sm-5">
+                        <button type="submit"class="btn btn-form">
+                            <a href="output.html">Confirm</a>
+                           <!-- <input  type="submit" value="Confirm" onclick="getData()"> -->
+                            
+                        </button>
+                    </div>
+                </div>
+
+              </form>
+          </div>
+          <div class="col-md-6">
+              <h2 id="services" class="text-center my-4"></h2>
+              <ul id="consultations"class="list-group"></ul>
+          </div>
+      </div>
+  </div> -->
+
+    
+</body>
+</html>
+<script>
+    function getData()
+  {
+      //gettting the values
+      var text = document.getElementById("patient-name").value;
+      var gender = document.getElementById("Gender").value;
+      var age= document.getElementById("Age").value; 
+      var email= document.getElementById("Email-ID").value; 
+      var tel= document.getElementById("contact").value; 
+      var text= document.getElementById("Specialist").value; 
+      var date= document.getElementById("date").value; 
+      var time= document.getElementById("time").value; 
+      var symptoms= document.getElementById("symptons").value; 
+      //saving the values in local storage
+      localStorage.setItem("txtValue", text);
+      localStorage.setItem("txtValue1", gender);
+      localStorage.setItem("txtValue2", age);
+      localStorage.setItem("txtValue3", email);   
+      localStorage.setItem("txtValue4",tel);
+      localStorage.setItem("txtValue5", date);
+      localStorage.setItem("txtValue6", time);   
+      localStorage.setItem("txtValue7",symptoms);
+  }
+  </script>
